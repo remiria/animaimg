@@ -15,7 +15,6 @@ public class StartUp {
     public static void main(String[] args) throws UnsupportedEncodingException {
         String bcyUrl = "https://bcy.net/item/detail/6628019396625301764";
         String result = NetUtils.getContent(bcyUrl);
-        result.replaceAll(" ","");
         List<String> list = NetUtils.getImgSrc(URLDecoder.decode(result,"utf-8"));
         for (String img : list){
             System.out.println(img);
