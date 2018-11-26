@@ -18,6 +18,7 @@ public class StartUp {
         List<String> list = NetUtils.getImgSrc(URLDecoder.decode(result,"utf-8"));
         for (String img : list){
             System.out.println(img);
+            System.out.println(img);
         }
     }
 }
