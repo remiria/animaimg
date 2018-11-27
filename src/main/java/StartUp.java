@@ -12,9 +12,9 @@ import java.util.List;
 public class StartUp {
 
 	public static void main(String[] args) throws UnsupportedEncodingException {
-		String bcyUrl = "https://bcy.net/item/detail/6628019396625301764";
+		String bcyUrl = "http://www.baidu.com";
 		String result = NetUtils.getContent(bcyUrl);
-		List<String> list = NetUtils.getImgSrc(URLDecoder.decode(result, "utf-8"));
+		List<String> list = NetUtils.getImgSrc(result);
 		for (String img : list) {
 			System.out.println(img);
 		}
